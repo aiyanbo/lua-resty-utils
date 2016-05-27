@@ -27,17 +27,3 @@ lua-resty-utils - OpenResty Lua Utils, include `collections`, `objects`.
 
     print(matched) -- print true
 ```
-
-## Objects
-
-```lua
-
-    local objects = require("objects")
-
-    local redis_port
-
-    local port = objects.get_or_else(redis_port, 6379)
-
-    print(port) -- print 6379
-
-```
