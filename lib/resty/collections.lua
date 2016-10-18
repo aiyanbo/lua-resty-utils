@@ -5,8 +5,6 @@ local _M = {
     _AUTHOR = "Andy Ai"
 }
 
-local mt = { __index = _M }
-
 function _M.contains_key(table, key)
     if not table then
         return false
