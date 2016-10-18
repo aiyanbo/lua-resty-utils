@@ -6,7 +6,7 @@ lua-resty-utils - OpenResty Lua Utils, include `collections`, `objects`.
 
 * [Synopsis](#synopsis)
   * [Collections](#collections)
-  * [Objects](#objects)
+  * [Redis](#redis)
 
 # Synopsis
 
