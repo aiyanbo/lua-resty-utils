@@ -1,6 +1,6 @@
 # Name
 
-lua-resty-utils - OpenResty Lua Utils, include `collections`, `objects`.
+lua-resty-utils - OpenResty Lua Utils, include `collections`, `redis`.
 
 # Table of Contents
 
