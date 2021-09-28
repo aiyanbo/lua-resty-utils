@@ -9,14 +9,13 @@ local _M = {
     _AUTHOR = "Andy Ai"
 }
 
-local mt = { __index = _M }
+local mt = {__index = _M}
 
 local function errlog(...)
     log(ERR, "Redis: ", ...)
 end
 
 function _M.exec(self, func)
-
     local red = redis:new()
     red:set_timeout(self.timeout)
 
@@ -45,6 +44,7 @@ function _M.new(opts)
         port = config.port or 6379,
         timeout = config.timeout or 5000,
         database = config.database or 0,
+        password = config.password,
         max_idle_time = config.max_idle_time or 60000,
         pool_size = config.pool_size or 100
     }
