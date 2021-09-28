@@ -1,7 +1,7 @@
 local match = ngx.re.match
 
 local _M = {
-    _VERSION = "1.0.0",
+    _VERSION = "1.0.1",
     _AUTHOR = "Andy Ai"
 }
 

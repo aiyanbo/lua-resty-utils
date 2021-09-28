@@ -5,7 +5,7 @@ local ERR = ngx.ERR
 local setmetatable = setmetatable
 
 local _M = {
-    _VERSION = "1.0.0",
+    _VERSION = "1.0.1",
     _AUTHOR = "Andy Ai"
 }
 
