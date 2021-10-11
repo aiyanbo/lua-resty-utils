@@ -25,6 +25,14 @@ function _M.exec(self, func)
         return nil, err
     end
 
+    if self.password then
+        local ok, err = red:auth(self.password)
+        if not ok then
+            errlog("Failed to authenticate: " .. err)
+            return nil ,err
+        end
+    end
+
     red:select(self.database)
 
     local res, err = func(red)
